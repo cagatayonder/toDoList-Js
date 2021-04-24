@@ -37,7 +37,7 @@ function newToDo() {
 
     // code for replace whitespace with "" => newListEl.replace(/^\s+|\s+$/g, "")
 
-    if (newListEl === '' || newListEl.replace(/^\s+|\s+$/g, "").length == 0 ) 
+    if (newListEl === '' || newListEl.trim().length == 0 ) 
     {
         $(".error").toast("show");
     } 
